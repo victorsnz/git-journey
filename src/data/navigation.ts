@@ -12,4 +12,5 @@ export const navigation: NavSection[] = [
   { id: "demo-en-vivo", label: "Demo en vivo" },
   { id: "buenas-practicas", label: "Buenas prácticas" },
   { id: "cheat-sheet", label: "Cheat Sheet" },
+  { id: "fuentes", label: "Fuentes" },
 ];

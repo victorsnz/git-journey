@@ -9,6 +9,7 @@ import { Workflow } from "./pages/Workflow";
 import { LiveDemo } from "./pages/LiveDemo";
 import { BestPractices } from "./pages/BestPractices";
 import { CheatSheet } from "./pages/CheatSheet";
+import { Sources } from "./pages/Sources";
 
 const sectionIds = navigation.map((s) => s.id);
 
@@ -25,6 +26,7 @@ export default function App() {
       <LiveDemo />
       <BestPractices />
       <CheatSheet />
+      <Sources />
     </MainLayout>
   );
 }
