@@ -14,11 +14,11 @@ export function WhatIsGit() {
 
       <div className="h-px bg-border-soft mb-8" />
 
-      <p className="text-muted leading-relaxed ">
+      <p className="text-muted leading-relaxed text-justify">
         Git es un software de control de versiones distribuido. El control de versiones es una forma de guardar los cambios a lo largo del tiempo sin sobrescribir las versiones anteriores. Que sea distribuido significa que cada desarrollador que trabaja con un repositorio de Git tiene una copia completa de ese repositorio: cada confirmación, cada rama, cada archivo.
       </p>
 
-      <p className="text-muted leading-relaxed mt-4 ">
+      <p className="text-muted leading-relaxed text-justify mt-4">
         Independientemente de si trabajaste antes con control de versiones o no, hay algunas cosas que tenés que saber antes de empezar con Git:
       </p>
 
@@ -41,7 +41,7 @@ export function WhatIsGit() {
         ¿Por qué usar Git?
       </h3>
 
-      <p className="text-muted leading-relaxed ">
+      <p className="text-muted leading-relaxed text-justify">
         El control de versiones es muy importante: sin él, corres el riesgo de perder tu trabajo. Con Git, podés hacer un «commit», o un punto de guardado, tantas veces como quieras. También podés volver a commits anteriores. Esto te quita presión mientras trabajas. Hacé commits con frecuencia y desde el principio, y nunca tendrás esa sensación de pánico al sobrescribir o perder cambios.
       </p>
     </Section>

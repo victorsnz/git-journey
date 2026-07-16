@@ -14,10 +14,10 @@ export function Workflow() {
 
       <div className="h-px bg-border-soft mb-8" />
 
-      <p className="text-muted leading-relaxed">
+      <p className="text-muted leading-relaxed text-justify">
         Es el proceso por el cual tus archivos pasan desde que son modificados localmente hasta que se registran permanentemente en el historial de versiones de Git.
       </p>
-      <p className="text-muted leading-relaxed mt-4">
+      <p className="text-muted leading-relaxed text-justify mt-4">
         Se divide principalmente en tres estados locales y uno remoto:
       </p>
       <ul className="space-y-3 mt-4">

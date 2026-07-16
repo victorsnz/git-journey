@@ -44,7 +44,7 @@ export function LiveDemo() {
         Sigue la demostración
       </h2>
 
-      <p className="text-muted leading-relaxed mb-10 max-w-lg">
+      <p className="text-muted leading-relaxed text-justify mb-10 max-w-lg">
         Marca cada paso a medida que lo ejecutás en la terminal.
       </p>
 

@@ -16,7 +16,7 @@ export function Introduction() {
         de tu proyecto
       </h1>
 
-      <p className="text-lg text-muted leading-relaxed max-w-xl mb-12">
+      <p className="text-lg text-muted leading-relaxed text-justify max-w-xl mb-12">
         Una guía visual para entender Git y GitHub durante la Hackathon.
         Sin slides. Sin distracciones.
       </p>
