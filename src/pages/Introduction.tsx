@@ -24,8 +24,7 @@ export function Introduction() {
       </h1>
 
       <p className="text-lg text-muted leading-relaxed text-justify max-w-xl mb-12">
-        Una guía visual para entender Git y GitHub durante la Hackathon.
-        Sin slides. Sin distracciones.
+        Una guía para entender Git y GitHub durante la Hackathon.
       </p>
 
       <div className="flex items-center gap-4 text-sm">
