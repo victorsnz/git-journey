@@ -41,6 +41,11 @@ export const commands: GitCommand[] = [
     example: "git pull origin main",
   },
   {
+    command: "git switch",
+    description: "Cambia a una rama diferente.",
+    example: "git switch develop",
+  },
+  {
     command: "git log",
     description: "Muestra el historial de commits del repositorio.",
     example: "git log --oneline",
