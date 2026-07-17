@@ -14,7 +14,7 @@ export function CheatSheet() {
         Comandos esenciales
       </h2>
 
-      <p className="text-muted leading-relaxed mb-10 max-w-lg">
+      <p className="text-muted leading-relaxed text-justify mb-10 max-w-lg">
         Los comandos que más vas a usar durante la Hackathon.
       </p>
 

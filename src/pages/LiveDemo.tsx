@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Check } from "lucide-react";
 import { Section } from "../components/layout/Section";
 import { cn } from "../lib/utils";
@@ -18,8 +18,28 @@ const demoSteps: ChecklistItem[] = [
   { id: "push", label: "Subir cambios", description: "git push origin main" },
 ];
 
+const STORAGE_KEY = "git-journey-live-demo";
+
+function loadChecked(): Set<string> {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (!raw) return new Set();
+    return new Set(JSON.parse(raw));
+  } catch {
+    return new Set();
+  }
+}
+
+function saveChecked(checked: Set<string>) {
+  localStorage.setItem(STORAGE_KEY, JSON.stringify([...checked]));
+}
+
 export function LiveDemo() {
-  const [checked, setChecked] = useState<Set<string>>(new Set());
+  const [checked, setChecked] = useState<Set<string>>(loadChecked);
+
+  useEffect(() => {
+    saveChecked(checked);
+  }, [checked]);
 
   const toggle = (id: string) => {
     setChecked((prev) => {
@@ -44,7 +64,7 @@ export function LiveDemo() {
         Sigue la demostración
       </h2>
 
-      <p className="text-muted leading-relaxed mb-10 max-w-lg">
+      <p className="text-muted leading-relaxed text-justify mb-10 max-w-lg">
         Marca cada paso a medida que lo ejecutás en la terminal.
       </p>
 

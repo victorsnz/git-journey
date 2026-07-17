@@ -14,7 +14,7 @@ export function GitVsGitHub() {
 
       <div className="h-px bg-border-soft mb-8" />
 
-      <p className="text-muted leading-relaxed ">
+      <p className="text-muted leading-relaxed text-justify">
       Git y GitHub están estrechamente vinculados para que trabajar con ellos sea una experiencia fluida. Mientras que Git se encarga del control de versiones subyacente, GitHub es la plataforma de colaboración construida sobre él. 
       GitHub es el lugar para las solicitudes de incorporación de cambios (pull request), los comentarios (comments), las revisiones (reviews), las pruebas integradas y mucho más. La mayoría de los desarrolladores trabajan localmente para desarrollar y usan GitHub para colaborar. Esto abarca desde usar GitHub para alojar el repositorio remoto compartido hasta trabajar con colegas y aprovechar funciones como las ramas protegidas, la revisión de código, GitHub Actions y más.
       Entonces:

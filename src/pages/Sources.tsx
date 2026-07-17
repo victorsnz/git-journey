@@ -35,6 +35,10 @@ export function Sources() {
           <span className="size-1.5 rounded-full bg-accent shrink-0 mt-2" />
           <a href="https://docs.github.com/es/get-started/start-your-journey/what-is-github" target="_blank" rel="noopener noreferrer" className="text-primary underline">https://docs.github.com/es/get-started/start-your-journey/what-is-github</a>
         </li>
+        <li className="flex gap-3 text-muted leading-relaxed ">
+          <span className="size-1.5 rounded-full bg-accent shrink-0 mt-2" />
+          <a href="https://ohshitgit.com/es" target="_blank" rel="noopener noreferrer" className="text-primary underline">https://ohshitgit.com/es</a>
+        </li>
       </ul>
     </Section>
   );
