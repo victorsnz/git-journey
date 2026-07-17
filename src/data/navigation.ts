@@ -11,6 +11,6 @@ export const navigation: NavSection[] = [
   { id: "flujo-de-trabajo", label: "Flujo de trabajo" },
   { id: "demo-en-vivo", label: "Demo en vivo" },
   { id: "buenas-practicas", label: "Buenas prácticas" },
-  { id: "cheat-sheet", label: "Cheat Sheet" },
+  { id: "cheat-sheet", label: "Cheat Sheet (machetito)" },
   { id: "fuentes", label: "Fuentes" },
 ];
