@@ -15,6 +15,7 @@ const demoSteps: ChecklistItem[] = [
   { id: "status", label: "Ver estado", description: "git status" },
   { id: "add", label: "Preparar cambios", description: "git add README.md" },
   { id: "commit", label: "Guardar cambios", description: 'git commit -m "Initial commit"' },
+  { id: "branch", label: "Crear repositorio remoto", description: "# Crear un repositorio remoto en GitHub y seguir las instrucciones." },
   { id: "push", label: "Subir cambios", description: "git push origin main" },
 ];
 
