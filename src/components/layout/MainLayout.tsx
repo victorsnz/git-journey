@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import { Sidebar } from "./Sidebar";
+import { GitHubStars } from "../ui/GitHubStars";
 
 interface MainLayoutProps {
   activeSection: string;
@@ -13,6 +14,9 @@ export function MainLayout({ activeSection, children }: MainLayoutProps) {
       <main className="pl-64" id="main-content">
         {children}
       </main>
+      <div className="fixed top-4 right-4 z-50">
+        <GitHubStars />
+      </div>
     </div>
   );
 }
