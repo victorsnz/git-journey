@@ -20,6 +20,19 @@
   scrollbar-color: #262629 transparent;
 }
 
+*::-webkit-scrollbar {
+  width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #262629;
+  border-radius: 3px;
+}
+
 ::selection {
   background: rgba(59, 206, 107, 0.25);
   color: #eeeef0;

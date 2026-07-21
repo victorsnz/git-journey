@@ -30,6 +30,7 @@ export function Sidebar({ activeSection }: SidebarProps) {
               <li key={section.id}>
                 <button
                   onClick={() => handleClick(section.id)}
+                  aria-current={isActive ? "page" : undefined}
                   className={cn(
                     "relative w-full text-left px-3 py-2 rounded-[5px] text-sm transition-all",
                     "hover:bg-surface",
@@ -65,7 +66,7 @@ export function Sidebar({ activeSection }: SidebarProps) {
             rel="noopener noreferrer"
             className="text-[11px] font-mono text-muted/40 hover:text-accent transition-colors"
           >
-            {typeof __COMMIT_HASH__ !== "undefined" ? __COMMIT_HASH__ : "dev"}
+            {__COMMIT_HASH__}
           </a>
         </div>
       </div>
