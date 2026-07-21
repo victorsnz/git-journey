@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Check } from "lucide-react";
+import { Check, RotateCcw } from "lucide-react";
 import { Section } from "../components/layout/Section";
 import { cn } from "../lib/utils";
 
@@ -121,6 +121,15 @@ export function LiveDemo() {
         <span className="ml-1">completados</span>
         {checked.size === demoSteps.length && (
           <span className="text-accent font-medium ml-2">— Todo listo</span>
+        )}
+        {checked.size > 0 && (
+          <button
+            onClick={() => setChecked(new Set())}
+            className="ml-auto flex items-center gap-1.5 text-xs text-muted hover:text-foreground transition-colors"
+          >
+            <RotateCcw className="size-3.5" />
+            Reiniciar
+          </button>
         )}
       </div>
     </Section>

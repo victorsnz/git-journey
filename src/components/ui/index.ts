@@ -5,3 +5,4 @@ export { Timeline } from "./Timeline";
 export { Callout } from "./Callout";
 export { Tip } from "./Tip";
 export { Warning } from "./Warning";
+export { GitHubStars } from "./GitHubStars";

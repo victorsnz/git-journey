@@ -39,9 +39,9 @@ function TimelineNode({
   return (
     <div ref={ref}>
       <motion.div
-        initial={{ opacity: 0, x: -12 }}
-        animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -12 }}
-        transition={{ duration: 0.4, delay: index * 0.1, ease: "easeOut" }}
+        initial={{ opacity: 0, x: -16, scale: 0.96 }}
+        animate={isInView ? { opacity: 1, x: 0, scale: 1 } : { opacity: 0, x: -16, scale: 0.96 }}
+        transition={{ duration: 0.5, delay: index * 0.12, ease: [0.25, 0.1, 0.25, 1] }}
         className="relative"
       >
         <div className="absolute -left-10 top-[7px] size-2 rounded-full bg-accent ring-[3px] ring-background" />
