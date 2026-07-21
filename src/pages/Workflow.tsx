@@ -1,4 +1,5 @@
 import { Section } from "../components/layout/Section";
+import { Terminal } from "../components/ui/Terminal";
 
 export function Workflow() {
   return (
@@ -64,6 +65,20 @@ export function Workflow() {
           <span><code className="text-xs font-mono text-accent">git log</code>: Te permite inspeccionar la evolución de los commits ya realizados en el historial.</span>
         </li>
       </ul>
+
+      <div className="mt-12">
+        <p className="text-muted text-sm mb-4">Observá el ciclo completo en acción:</p>
+        <Terminal
+          lines={[
+            { command: "git init", output: "Initialized empty Git repository in ~/mi-proyecto/.git/" },
+            { command: "echo '# Mi Proyecto' > README.md", output: "" },
+            { command: "git add README.md", output: "" },
+            { command: 'git commit -m "Initial commit"', output: "[main (root-commit) a1b2c3d] Initial commit\n 1 file changed, 1 insertion(+)\n create mode 100644 README.md" },
+            { command: "git remote add origin https://github.com/usuario/mi-proyecto.git", output: "" },
+            { command: "git push -u origin main", output: "Enumerating objects: 3, done.\nCounting objects: 100% (3/3), done.\nWriting objects: 100% (3/3), 232 bytes | 232.00 KiB/s, done.\nTotal 3 (delta 0), reused 0 (delta 0)\nTo https://github.com/usuario/mi-proyecto.git\n * [new branch]      main -> main\nBranch 'main' set up to track remote branch 'main' from 'origin'." },
+          ]}
+        />
+      </div>
     </Section>
   );
 }
