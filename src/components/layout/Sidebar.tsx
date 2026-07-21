@@ -30,6 +30,7 @@ export function Sidebar({ activeSection }: SidebarProps) {
               <li key={section.id}>
                 <button
                   onClick={() => handleClick(section.id)}
+                  aria-current={isActive ? "page" : undefined}
                   className={cn(
                     "relative w-full text-left px-3 py-2 rounded-[5px] text-sm transition-all",
                     "hover:bg-surface",
@@ -55,7 +56,18 @@ export function Sidebar({ activeSection }: SidebarProps) {
         <div className="flex items-center gap-2.5">
           <span className="text-xs text-muted">Hackathon 2026</span>
           <span className="size-1 rounded-full bg-border" />
-          <span className="text-xs text-muted/50">v1.0</span>
+          <span className="text-xs text-muted/50">v2.0</span>
+        </div>
+        <div className="mt-1.5 flex items-center gap-1.5">
+          <span className="text-[11px] text-muted/30">commit actual</span>
+          <a
+            href={`${__REPO_URL__}/commit/${__COMMIT_HASH__}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[11px] font-mono text-muted/40 hover:text-accent transition-colors"
+          >
+            {__COMMIT_HASH__}
+          </a>
         </div>
       </div>
     </aside>

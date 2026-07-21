@@ -17,27 +17,27 @@ export function Sources() {
       <ul className="space-y-3 mt-4">
         <li className="flex gap-3 text-muted leading-relaxed ">
           <span className="size-1.5 rounded-full bg-accent shrink-0 mt-2" />
-          <a href="https://github.com/git-guides" target="_blank" rel="noopener noreferrer" className="text-primary underline">https://github.com/git-guides</a>
+          <a href="https://github.com/git-guides" target="_blank" rel="noopener noreferrer" className="text-accent underline hover:brightness-110 transition-all">https://github.com/git-guides</a>
         </li>
         <li className="flex gap-3 text-muted leading-relaxed ">
           <span className="size-1.5 rounded-full bg-accent shrink-0 mt-2" />
-          <a href="https://rogerdudler.github.io/git-guide/index.es.html" target="_blank" rel="noopener noreferrer" className="text-primary underline">https://rogerdudler.github.io/git-guide/index.es.html</a>
+          <a href="https://rogerdudler.github.io/git-guide/index.es.html" target="_blank" rel="noopener noreferrer" className="text-accent underline hover:brightness-110 transition-all">https://rogerdudler.github.io/git-guide/index.es.html</a>
         </li>
         <li className="flex gap-3 text-muted leading-relaxed ">
           <span className="size-1.5 rounded-full bg-accent shrink-0 mt-2" />
-          <a href="https://www.freecodecamp.org/espanol/news/guia-para-principiantes-de-git-y-github/" target="_blank" rel="noopener noreferrer" className="text-primary underline">https://www.freecodecamp.org/espanol/news/guia-para-principiantes-de-git-y-github/</a>
+          <a href="https://www.freecodecamp.org/espanol/news/guia-para-principiantes-de-git-y-github/" target="_blank" rel="noopener noreferrer" className="text-accent underline hover:brightness-110 transition-all">https://www.freecodecamp.org/espanol/news/guia-para-principiantes-de-git-y-github/</a>
         </li>
         <li className="flex gap-3 text-muted leading-relaxed ">
           <span className="size-1.5 rounded-full bg-accent shrink-0 mt-2" />
-          <a href="https://git-scm.com/book/es/v2" target="_blank" rel="noopener noreferrer" className="text-primary underline">https://git-scm.com/book/es/v2</a>
+          <a href="https://git-scm.com/book/es/v2" target="_blank" rel="noopener noreferrer" className="text-accent underline hover:brightness-110 transition-all">https://git-scm.com/book/es/v2</a>
         </li>
         <li className="flex gap-3 text-muted leading-relaxed ">
           <span className="size-1.5 rounded-full bg-accent shrink-0 mt-2" />
-          <a href="https://docs.github.com/es/get-started/start-your-journey/what-is-github" target="_blank" rel="noopener noreferrer" className="text-primary underline">https://docs.github.com/es/get-started/start-your-journey/what-is-github</a>
+          <a href="https://docs.github.com/es/get-started/start-your-journey/what-is-github" target="_blank" rel="noopener noreferrer" className="text-accent underline hover:brightness-110 transition-all">https://docs.github.com/es/get-started/start-your-journey/what-is-github</a>
         </li>
         <li className="flex gap-3 text-muted leading-relaxed ">
           <span className="size-1.5 rounded-full bg-accent shrink-0 mt-2" />
-          <a href="https://ohshitgit.com/es" target="_blank" rel="noopener noreferrer" className="text-primary underline">https://ohshitgit.com/es</a>
+          <a href="https://ohshitgit.com/es" target="_blank" rel="noopener noreferrer" className="text-accent underline hover:brightness-110 transition-all">https://ohshitgit.com/es</a>
         </li>
       </ul>
     </Section>

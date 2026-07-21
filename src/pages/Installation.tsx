@@ -18,7 +18,7 @@ export function Installation() {
       Cómo instalar Git en cualquier sistema operativo
       Antes de empezar a utilizar Git, tenés que instalarlo en tu computadora. Incluso si ya está instalado, este es posiblemente un buen momento para actualizarlo a su última versión.
       </p>
-      <a href="https://git-scm.com/install/" target="_blank" rel="noopener noreferrer" className="text-primary underline">https://git-scm.com/install/</a>
+      <a href="https://git-scm.com/install/" target="_blank" rel="noopener noreferrer" className="text-accent underline hover:brightness-110 transition-all">https://git-scm.com/install/</a>
 
       <h3 className="text-xl font-normal tracking-tight text-foreground leading-tight my-6">
         Instalación en Linux
@@ -47,7 +47,7 @@ export function Installation() {
       <p className="text-muted leading-relaxed text-justify">
       Utilizando la herramienta winget</p>
       <p className="text-muted leading-relaxed text-justify">
-      Instalá la herramienta <a href="https://learn.microsoft.com/en-us/windows/package-manager/" target="_blank" rel="noopener noreferrer" className="text-primary underline">winget</a> si aún no la tenés; luego, ejecutá este comando en la línea de comandos o en PowerShell:<br />
+      Instalá la herramienta <a href="https://learn.microsoft.com/en-us/windows/package-manager/" target="_blank" rel="noopener noreferrer" className="text-accent underline hover:brightness-110 transition-all">winget</a> si aún no la tenés; luego, ejecutá este comando en la línea de comandos o en PowerShell:<br />
       </p>
       <pre className="bg-background/50 p-4 rounded-lg overflow-x-auto border border-border">
         <code className="text-sm font-mono text-accent">
