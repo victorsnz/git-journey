@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://victor-sanchez.dev/git-journey/sitemap.xml
+Sitemap: https://victorsnz.github.io/git-journey/sitemap.xml

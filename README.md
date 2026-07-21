@@ -26,53 +26,29 @@ pnpm build
 
 El proyecto está configurado con el base path `/git-journey/`.
 
-### Opción 1: Manual
-
 ```bash
-npm run build
+pnpm build
 # Subir el contenido de dist/ al branch gh-pages
 ```
 
-### Opción 2: GitHub Actions
+## Características
 
-Crear `.github/workflows/deploy.yml`:
-
-```yaml
-name: Deploy to GitHub Pages
-on:
-  push:
-    branches: [main]
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: \${{ steps.deployment.outputs.page_url }}
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 20
-      - run: npm ci
-      - run: npm run build
-      - uses: actions/configure-pages@v4
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: dist
-      - id: deployment
-        uses: actions/deploy-pages@v4
-```
+- **Terminal animado** — comandos git que se tipean en vivo en la sección "Flujo de trabajo"
+- **Checklist interactiva** — demo paso a paso con persistencia en localStorage y botón de reinicio
+- **Scroll-spy sidebar** — navegación con resaltado automático de la sección actual y `aria-current`
+- **Git commit hash** — muestra el SHA del build actual, enlace directo al commit en GitHub
+- **Skip-to-content** — enlace de accesibilidad para navegación por teclado
+- **Sitemap + robots.txt** — configuración SEO
+- **Easter egg** — mensaje oculto para desarrolladores
+- **Tema oscuro** — paleta de colores personalizada con Tailwind v4
+- **GitHub Stars** — contador de estrellas en vivo
 
 ## Estructura
 
 ```
 src/
 ├── components/
-│   ├── layout/       # Sidebar, MainLayout
+│   ├── layout/       # Sidebar, MainLayout, Section
 │   └── ui/           # Command, Terminal, CommitCard, Timeline, etc.
 ├── pages/            # Secciones de la presentación
 ├── data/             # Datos estáticos (navegación, comandos)
