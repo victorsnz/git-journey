@@ -13,4 +13,5 @@ export const navigation: NavSection[] = [
   { id: "buenas-practicas", label: "Buenas prácticas" },
   { id: "cheat-sheet", label: "Cheat Sheet (machetito)" },
   { id: "fuentes", label: "Fuentes" },
+  { id: "test", label: "Test" },
 ];
