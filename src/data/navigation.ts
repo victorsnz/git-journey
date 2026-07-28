@@ -14,4 +14,5 @@ export const navigation: NavSection[] = [
   { id: "cheat-sheet", label: "Cheat Sheet (machetito)" },
   { id: "fuentes", label: "Fuentes" },
   { id: "test", label: "Test" },
+  { id: "contacto", label: "Contacto" },
 ];
